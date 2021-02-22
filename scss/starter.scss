@@ -1,36 +1,6 @@
-// Override Bootstrap's Sass default variables
-//
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import Bootstrap's source Sass files.
-//
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, change you can either change
-// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
-// `body { color: red; }`.
 
+@import "bootstrap/scss/bootstrap";
 
-//
-// Bring in Bootstrap
-//
-
-// Option 1
-//
-// Import all of Bootstrap's CSS
-
-// @import "bootstrap/scss/bootstrap";
-
-// Option 2
-//
-// Import just the styles you need. Note that some stylesheets are required no matter what.
-
-@import "bootstrap/scss/functions"; // Required
-@import "bootstrap/scss/variables"; // Required
-@import "bootstrap/scss/mixins"; // Required
-
-//
-// Override Bootstrap here
-//
 
 // Toggle global options
 $enable-gradients: true;
@@ -41,51 +11,97 @@ $body-color: $purple;
 $body-bg: #f5f5f5;
 $border-radius: .4rem;
 
-// @import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot"; // Required
-@import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
-// @import "bootstrap/scss/code";
-@import "bootstrap/scss/grid";
-// @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
-// @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/input-group"; // Requires forms
-// @import "bootstrap/scss/custom-forms";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
-// @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/jumbotron";
-// @import "bootstrap/scss/alert";
-// @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/media";
-// @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
-// @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
-// @import "bootstrap/scss/tooltip";
-// @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/utilities";
-// @import "bootstrap/scss/print";
-
-
 //
 // Custom styles
 //
 
 body {
-  padding: 3rem 1.5rem;
+  padding: 0.1rem 0.5rem;
 }
 
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
+}
+.nav-item{
+  margin-left: 1.5rem;
+}
+.img-bg-header{
+  z-index: -100;
+  padding: 0;
+  margin: 0;
+}
+.img-bg{
+  width: 100%;
+}
+.header{
+  z-index: 100;
+}
+.caption{
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+//             ***************更改字体***************                       //
+body {
+  font-family: Courier,Helvetica,Arial,STKaiti,'华文楷体',sans-serif;
+  font-size: 16px;
+  line-height: 1.42857;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Courier,Helvetica,Arial,STKaiti,'华文楷体',sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
+//                 ******************************                          //
+
+.img-bg-1{
+  background: url("/assets/imges/bgimage.png") no-repeat;
+}
+.content-top{
+  margin-top: 3.5rem;
+}
+.text-content-xx{
+  margin-top: 1.5rem;
+}
+.text-xx{
+  line-height: 0.8;
+  font-weight: 220;
+}
+.img-text-box{
+  position: relative;
+  height: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  display: block;
+}
+.card-no-border{
+  border: none;
+}
+.martop-rem{
+  margin-top: 3.5rem;
+}
+.card-no-padding{
+  padding: 0;
+}
+.top-border-display{
+  border-top: slategrey solid 1px;
+}
+.card-title-mystyle{
+  font-family: Courier,sans-serif;
+  color: darkgrey;
+}
+.my-fontstyle{
+  font-family: Courier,sans-serif;
+}
+.footer-p-font{
+  color: rgb(135, 146, 146);
+  line-height: 0.7;
+  font-weight: 200;
+}
+.footer-ul-top{
+  margin-top: 1.5rem;
 }
