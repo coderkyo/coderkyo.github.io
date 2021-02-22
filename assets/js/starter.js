@@ -8,7 +8,7 @@
 //
 // Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency)
 
-import "/assets/js/node_modules/dist/js/bootstrap.bundle.min.js";
+import "/assets/js/modules/dist/js/bootstrap.bundle.min.js";
 
 
 // Option 2
@@ -16,7 +16,7 @@ import "/assets/js/node_modules/dist/js/bootstrap.bundle.min.js";
 // Import just what we need
 
 // If you're importing tooltips or popovers, be sure to include our Popper.js dependency
-import "/assets/js/node_modules/popper.js/dist/popper.min.js";
+import "/assets/js/modules/popper.js/dist/popper.min.js";
 
-import "/assets/js/node_modules/dist/js/util.js";
-import "/assets/js/node_modules/dist/js/modal.js";
+import "/assets/js/modules/dist/js/util.js";
+import "/assets/js/modules/dist/js/modal.js";
