@@ -56,6 +56,12 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 300;
   line-height: 1.2;
 }
+.font-color{
+  color: lightgrey;
+}
+.my-fontstyle{
+  font-family: Courier,sans-serif;
+}
 //                 ******************************                          //
 
 .img-bg-1{
@@ -85,6 +91,9 @@ h1, h2, h3, h4, h5, h6,
 .martop-rem{
   margin-top: 3.5rem;
 }
+.marbot-rem{
+  margin-bottom: 4.5rem;
+}
 .card-no-padding{
   padding: 0;
 }
@@ -95,9 +104,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: Courier,sans-serif;
   color: darkgrey;
 }
-.my-fontstyle{
-  font-family: Courier,sans-serif;
-}
+
 .footer-p-font{
   color: rgb(135, 146, 146);
   line-height: 0.7;
@@ -106,6 +113,19 @@ h1, h2, h3, h4, h5, h6,
 .footer-ul-top{
   margin-top: 1.5rem;
 }
-.font-color{
-  color: lightgrey;
+
+
+//          ***************Application x***************                    //
+.app-martop-rem{
+  margin-top: 8.5rem;
 }
+.app-marbot-rem{
+  margin-bottom: 8.5rem;
+}
+.app-foot-title-font-color{
+  color: rgb(233, 233, 227);
+}
+.app-foot-text-font-color{
+  color: rgb(177, 177, 170);
+}
+//                 ******************************                          //
